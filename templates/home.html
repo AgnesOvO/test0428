@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+  %}
+  <div class="container" style="margin: 20px;">
+    <div class="row">
+      <div class="col">
+        <p></p>
+        <p></p>
+        <div class="container">
+          <form action="" method="POST" enctype="multipart/form-data" class="col" >
+            <h1>Upload a file</h1>
+            <hr>
+            <div class="mb-3">
+              <div class="custom-file">
+                <label class="form-label" for="xlsx">Select xlsx...</label>
+                <input type="file" class="form-control" name="xlsx" id="formFile">
+              </div>
+            </div>
+            <div style="margin-top: 20px;">
+              <button type="submit" class="btn btn-primary">上傳檔案</button>
+            </div>
+            <div style="margin-top: 20px;">
+              <button type="submit" formaction="/enterlogo" class="btn btn-info" style="margin-right: 5px; ">藏入商標</button>
+              <button type="submit" formaction="/entercolname-takeoutlogo" class="btn btn-success" style="margin-right: 5px; ">取出商標</button>
+              <p></p>
+              <button type="submit" formaction="/entercolname-pic" class="btn btn-info" style="margin-right: 5px; ">藏入驗證用圖片</button>
+              <button type="submit" formaction="/entercolname-takeoutpic" class="btn btn-success" style="margin-right: 5px; ">取出驗證圖片</button>
+              <p></p>
+              <!-- <button type="submit" formaction="/entersecinfo" class="btn btn-info" style="margin-right: 5px; ">藏入機密訊息</button> -->
+              <!-- <button type="submit" formaction="/entercolname-takeoutinfo" class="btn btn-success" style="margin-right: 5px; ">取出機密訊息</button> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+  
+

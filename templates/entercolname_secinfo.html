@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+    <form action="/takeoutsecinfo" style="margin-top: 20px;" method="GET" enctype="text/plain" >
+      <h3 align="center">Enter your column name</h3>
+      <div class="form-group">
+        <label for="Column name">Column name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="takeoutcolname"
+          name="takeoutcolname"
+          placeholder="請輸入欄位名稱"
+        />
+        <p></p>
+        <label for="lan">language</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lan"
+          name="lan"
+          placeholder="請輸入轉換語言(en或zh-tw)"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary" style="margin-top: 15px; margin-left: 29px; ">取出機密訊息</button>
+    </form>
+    {% endblock %}
+    

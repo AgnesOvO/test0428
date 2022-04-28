@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+
+    <input id lefile type="file" style="display:none;">
+    <div class="input-append">
+        <input id="phtoCover" class="input-large" type="text" style="height: 30px;">
+        <a class="btn" onclick="$('input[id=lefile]').click();">Browse</a>
+
+    </div>
+    <script type="text/javascript">
+    $('input[id=lefile]').change(function(){
+        $('#phtpcover').val($(this).val());
+    });
+    </script>
+
+    {% endblock %}
+    
+  

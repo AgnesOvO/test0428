@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+    <form action="/picture" style="margin-top: 20px;" method="GET" enctype="text/plain" >
+      <h3 align="center">Enter your column name</h3>
+      <div class="form-group">
+        <label for="Column name">Column name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="piccolname"
+          name="piccolname"
+          placeholder="請輸入欄位名稱"
+        />
+        <p></p>
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary" style="margin-top: 15px; margin-left: 29px; ">藏入驗證圖片</button>
+    </form>
+    {% endblock %}
+    

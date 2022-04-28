@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Login{% endblock %} {% block content
+    %}
+    <form action="/addingsecinfo" style="margin-top: 20px;" method="GET" enctype="text/plain" >
+      <h3 align="center">Add your secret information</h3>
+      <div class="form-group">
+        <label for="secinfo">Secret info</label>
+        <input
+          type="text"
+          class="form-control"
+          id="secinfo"
+          name="secinfo"
+          placeholder="請輸入機密訊息"
+        />
+        <p></p>
+        <label for="colname">Column name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="colname"
+          name="colname"
+          placeholder="請輸入欄位名稱"
+        />
+      </div>
+      <br />
+      <button type="submit" class="btn btn-primary" style="margin-top: 15px; margin-left: 29px; ">加入機密訊息</button>
+    </form>
+    {% endblock %}
+    
